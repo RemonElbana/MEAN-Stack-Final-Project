@@ -1,0 +1,42 @@
+<!-- frontend/src/app/components/product-list/product-list.component.html -->
+  <div class="container">
+    <div class="row">
+    <button class="button">
+      <span class="shadow"></span>
+      <span class="edge"></span>
+      <div class="front">
+        <a routerLink="/products/add" >Add Product</a>
+      </div>
+    </button>
+      <div class="container mt-4">
+        <div class="row">
+          <div *ngFor="let product of products" class="col-md-4 mb-4">
+            <div class="card">
+              <img [src]="product.imageUrl" alt="{{ product.name }}" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <p class="card-text"><strong>Price:</strong> {{ product.price | priceFormat }}</p>
+                <p class="card-text"><small class="text-muted">Created At: {{ product.createdAt | date: 'medium' }}</small></p>
+                <button class="button btn-edit" (click)="onEdit(product._id)">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <div class="front">
+                    <span>Edit</span>
+                  </div>
+                </button>
+                <button class="button btn-del"(click)="onDelete(product._id)">
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <div class="front">
+                    <span>Delete</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
