@@ -71,6 +71,17 @@ The Product Management App is a full-stack application that allows users to mana
    ```bash
    npm start
    ```
+4. Add your DB and Cloudniary info in .env file
+   ```bash
+   MONGO_URI=
+   JWT_SECRET=
+   JWT_EXPIRES_IN=
+   CLOUDINARY_CLOUD_NAME=
+   CLOUDINARY_API_KEY=
+   CLOUDINARY_API_SECRET=
+   DEFAULT_PRODUCT_IMAGE=
+
+   ```
    The backend will run on `http://localhost:5000`.
 
 ---
