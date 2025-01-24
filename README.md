@@ -60,7 +60,7 @@ The Product Management App is a full-stack application that allows users to mana
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ah0048/Product-Management-App
+   git clone https://github.com/RemonElbana/MEAN-Stack-Final-Project.git
    cd Product-Management-App/backend
    ```
 2. Install dependencies:
@@ -83,7 +83,7 @@ The Product Management App is a full-stack application that allows users to mana
 ### Installation
 1. Navigate to the frontend directory:
    ```bash
-   cd Product-Management-App/frontend
+   cd MEAN-Stack-Final-Project/frontend
    ```
 2. Install dependencies:
    ```bash
@@ -178,9 +178,3 @@ frontend/
 ### Authentication
 - Users must log in to add, edit, or delete products.
 - JWT tokens are stored in local storage for authenticated requests.
-
----
-
-## License
-This project is licensed under the MIT License.
-
